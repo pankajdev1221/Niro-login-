@@ -1,0 +1,101 @@
+@media (max-width:780px) {
+
+    .dashboard-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .bar-btn {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .large-view-area {
+        padding: 20px 5px;
+    }
+
+    .user-table {
+        padding: 0;
+    }
+
+    #device-image {
+        width: 100px;
+    }
+
+    .pay-btn.paypal {
+        margin-bottom: 0.5rem;
+        background-color: #F1BA37;
+        margin-right: 0rem;
+    }
+
+    .profile-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .profile-container .form-field {
+        grid-template-columns: 40% 60%;
+    }
+
+    .side-link {
+        display: none;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--body-bg);
+        height: 100%;
+        width: 200px;
+        z-index: 99;
+    }
+
+    .sidebar.expand {
+        display: block;
+    }
+
+    .hide-on-big {
+        display: block;
+    }
+
+    .sidebar p {
+        color: #fff;
+        margin-top: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .first-link {
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+}
+
+@media (max-width:650px) {
+    .user-table {
+        /* max-width: 700px; */
+        width: 100% !important;
+        max-width: 365px;
+        overflow-x: scroll !important;
+        white-space: nowrap;
+    }
+
+    .form-field {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .form-field .verify-btn {
+        margin-top: 1.5rem;
+    }
+}
