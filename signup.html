@@ -39,7 +39,7 @@
             <!-- <div class="df aic"> -->
 
               
-                <div class="side-link"><a class="" href="login.html">Login</a></div>
+                <div class="side-link"><a class="" href="signup.html">Signup</a></div>
 
             <!-- </div> -->
             <!-- <p><a href="#">Logout <i class="fas fa-sign-out-alt"></i></a></p> -->
@@ -50,39 +50,35 @@
 
 
 
+
     <div class="form-container">
         <form>
-            <div class="form-head">
-                <h2>Signup</h2>
-            </div>
             <div class="form-field">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email@adress.com">
-                <a href="#" class="verify-btn" id="verify">Verify</a>
+                <a href="#" class="verify-btn">Verify</a>
             </div>
-            
-            <div class="show-later">
-               <div class="form-field">
-                   <label for="otp">OTP</label>
-                   <input type="text" name="otp" id="otp" placeholder="000000">
-                   <a href="#" class="confirm-otp">Confirm OTP</a>
-               </div>
-                <div class="form-field">
+            <div class="form-field">
+                <label for="otp">OTP</label>
+                <input type="text" name="otp" id="otp" placeholder="000000">
+                <a href="#" class="verify-btn">Confirm OTP</a>
+            </div>
+
+            <div class="form-field">
                 <label for="pass">Create Password</label>
                 <input type="password" name="pass" id="pass">
                 
-                </div>
-                <div class="form-field">
-                    <label for="confirm-pass">Confirm Password</label>
-                    <input type="password" name="confirm-pass" id="confirm-pass">
+            </div>
+            <div class="form-field">
+                <label for="confirm-pass">Confirm Password</label>
+                <input type="password" name="confirm-pass" id="confirm-pass">
 
-                </div>
-           </div>
+            </div>
 
 
             <div class="submit-buttons">
                 <input type="reset" value="Cancel" class="btn-submit first-btn">
-                <!-- <input type="submit" value="Create" class="btn-submit"> -->
+                <input type="submit" value="Create" class="btn-submit">
             </div>
         </form>
     </div>
@@ -96,27 +92,18 @@
 
   
     <script>
-        // const nav = document.querySelector('.sidebar-area');
-        // const bars = document.querySelector('.fa-bars');
-        // const ib = document.querySelector('#mneu')
-        // const menuEvent = () => {
-        //     nav.classList.toggle('expand');
-        //     if (ib.classList.contains('fa-bars')) {
-        //         ib.classList.replace('fa-bars', 'fa-times');
-        //     } else {
-        //         ib.classList.replace('fa-times', 'fa-bars');
-        //     }
-        // }
-        // bars.addEventListener('click', menuEvent);
-
-
-        const verifybtn = document.querySelector('#verify');
-
-        verifybtn.addEventListener('click' , function(){
-            document.querySelector('.show-later').classList.add('show');
-            verifybtn.innerHTML='Sent ✔';
-
-        })
+        const nav = document.querySelector('.sidebar-area');
+        const bars = document.querySelector('.fa-bars');
+        const ib = document.querySelector('#mneu')
+        const menuEvent = () => {
+            nav.classList.toggle('expand');
+            if (ib.classList.contains('fa-bars')) {
+                ib.classList.replace('fa-bars', 'fa-times');
+            } else {
+                ib.classList.replace('fa-times', 'fa-bars');
+            }
+        }
+        bars.addEventListener('click', menuEvent);
     </script>
 </body>
 </html>
