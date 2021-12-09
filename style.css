@@ -115,6 +115,8 @@ form {
     padding: 25px;
     border-radius: 5px;
     background-color: var(--box-bg);
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
 
 }
 
@@ -124,7 +126,7 @@ form {
 
 .form-head h2 {
     font-weight: 500;
-    color: rgb(192, 192, 192);
+    color: #333;
     margin-bottom: 2.5rem;
 }
 
@@ -133,10 +135,15 @@ form {
     display: grid;
     grid-template-columns: 150px 1fr;
     margin: 1rem 0;
+    background: var(--body-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .form-field label {
     color: #333;
+    margin-top: 4px;
 }
 
 .form-field input {
@@ -144,7 +151,10 @@ form {
     padding: 3px 10px;
     border: 1px solid var(--box-bg);
     min-width: 290px;
-    border-radius: 3px;
+    background: var(--box-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .form-field input:focus {
@@ -170,6 +180,10 @@ form {
     display: block;
     text-align: right;
     margin-top: 2rem;
+}
+
+.submit-buttons a {
+    color: #333;
 }
 
 .btn-submit.first-btn {
@@ -962,4 +976,13 @@ footer {
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+
+.form-container .center p {
+    color: #555;
+    font-size: .95rem;
+}
+
+.form-container .center p span {
+    color: #000;
 }
