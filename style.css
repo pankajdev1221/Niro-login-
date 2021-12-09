@@ -16,10 +16,10 @@
 
     --white: #333;
     --grey: #ccc;
-    --dark-body-bg: #0e1525;
-    --dark-box-bg: #0b111f;
-    --box-bg: #f7f7f7;
-    --body-bg: #fff;
+    --body-bg: #0e1525;
+    --box-bg: #0b111f;
+    /* --box-bg: #f7f7f7;
+    --body-bg: #fff; */
     --head-color: #1D99FD;
     --first-box-border: #5B2DF8;
     --second-box-border: #01C3FF;
@@ -57,7 +57,7 @@ nav {
     align-items: center;
     padding: 0.9rem 1rem;
     height: 70px;
-    background-color: var(--dark-box-bg);
+    background-color: var(--box-bg);
 }
 
 nav .connect-wallet {
@@ -97,7 +97,7 @@ a {
 }
 
 i {
-    color: #333;
+    color: #ccc;
 }
 
 .aic {
@@ -131,21 +131,30 @@ form {
 .form-field {
     position: relative;
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 140px 1fr;
     margin: 1rem 0;
+    background: var(--body-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
 }
 
 .form-field label {
-    color: #333;
+    color: #ccc;
+    margin-top: 5px;
 }
 
 .form-field input {
     height: 33px;
-    padding: 3px 10px;
-    border: 1px solid var(--box-bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(56, 56, 56);
     min-width: 290px;
-    border-radius: 3px;
+    border-radius: 5px;
+    background: var(--box-bg);
+    color: #ccc;
 }
+
+.form-field input::placeholder {}
 
 .form-field input:focus {
     transform: scaleY(1.02);
@@ -241,7 +250,7 @@ form {
 
 .sidebar ul li a {
     display: block;
-    color: #333;
+    color: #ccc;
 }
 
 .device-info-box {
@@ -262,12 +271,12 @@ form {
 }
 
 .device-info-box>div h4 {
-    color: #333;
+    color: #ccc;
     font-weight: 400;
 }
 
 .device-info-box>div p {
-    color: #333;
+    color: #ccc;
     font-weight: 400;
 }
 
@@ -283,25 +292,25 @@ form {
     border-radius: 10px;
     padding: 20px;
     background-color: var(--box-bg);
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     text-align: center;
 }
 
 .box h3 {
     font-size: 1.2rem;
     /* color: rgb(175, 175, 175); */
-    color: #333;
+    color: #ccc;
 }
 
 .box p.large {
-    color: #333;
+    color: #ccc;
     /* color: #ccc; */
     font-size: 2rem;
     margin-bottom: 0;
 }
 
 .large {
-    color: #333;
+    color: #ccc;
     font-size: 2rem;
     margin-bottom: 0;
 }
@@ -312,13 +321,13 @@ form {
     background-color: var(--box-bg);
     border-radius: 10px;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
 }
 
 .box-to-paid h3 {
     font-size: 1.2rem;
     color: rgb(175, 175, 175);
-    color: #333;
+    /* color: #333; */
 }
 
 .pay-btns {
@@ -543,9 +552,7 @@ tr:nth-child(even) {
 /* MARKETPLACE */
 .tabs-links {
     margin-top: 1.5rem;
-    overflow-x: scroll;
     position: relative;
-    overflow: scroll;
     width: 100%;
     overflow-x: auto;
 }
@@ -557,7 +564,7 @@ tr:nth-child(even) {
     display: flex;
     justify-content: center;
     /* flex-wrap: wrap; */
-    border-bottom: 1px solid #f3f3f3;
+    border-bottom: 1px solid var(--box-bg);
 }
 
 .tabs-links ul li:first-of-type {
@@ -575,26 +582,28 @@ tr:nth-child(even) {
 }
 
 .tabs-links ul li:hover {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #fff;
 
 }
 
 .tabs-links ul li.active {
-    border-bottom: 3px solid #555;
-    color: #555;
+    border-bottom: 3px solid var(--btn-orange);
+    color: #fff;
 }
 
 .tabs-links ul li.active a {
-    color: #555;
+    color: #fff;
 
 }
 
 .tabs-links ul li a {
+    text-align: center;
     /* border: 1px solid red; */
-    color: #777;
+    color: #ccc;
     padding: 0.6rem 1.3rem;
     padding-left: 5px;
     display: flex;
+    justify-content: center;
     align-items: center;
     min-width: 120px;
 }
@@ -616,13 +625,14 @@ tr:nth-child(even) {
 .market-box {
     display: inline-block;
     border-radius: 20px;
+    background-color: var(--box-bg);
     /* max-width: 330px; */
-    border: 1px solid #ccc;
+    border: 1px solid #555;
 }
 
 .market-box:hover {
     transform: scaleY(1.02);
-    box-shadow: 1px 2px 2px #ccc;
+    box-shadow: 1px 2px 2px var(--body-bg);
 }
 
 #image-product {
@@ -643,7 +653,7 @@ tr:nth-child(even) {
 
 .market-box div h5 {
     font-size: 0.9rem;
-    color: #333;
+    color: #ccc;
 }
 
 .market-box div {
@@ -651,7 +661,7 @@ tr:nth-child(even) {
 }
 
 .market-box div p {
-    color: #555;
+    color: rgb(163, 163, 163);
     font-size: .85rem;
     margin: 0;
     padding: 0;
@@ -672,7 +682,7 @@ tr:nth-child(even) {
 .large-image {
     max-width: 700px;
     /* background: yellow; */
-    border: 1px solid #f3f3f3;
+    border: 1px solid #555;
     margin-right: 1.5rem;
     border-radius: 15px;
 }
@@ -687,6 +697,10 @@ tr:nth-child(even) {
     width: 100%;
     padding: 15px;
     /* background: yellow; */
+}
+
+.details-box h1 {
+    color: #fff;
 }
 
 .details-box p {
@@ -704,11 +718,13 @@ p.description {
 
 .details-box h2 {
     margin-top: 0;
+    color: #ccc;
 }
 
 #pay-now-btn {
+    border: 1px solid var(--btn-orange);
     color: #fff;
-    background-color: #333;
+    background-color: var(--btn-orange);
     padding: 5px 25px;
     border-radius: 10px;
     margin-left: 0;
@@ -728,16 +744,16 @@ p.description {
 .collection {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #ccc;
+    border: 1px solid #555;
     border-radius: 20px;
-    background-color: #f5f5f5;
+    background-color: var(--box-bg);
     margin: 1rem 0;
 }
 
 .image-collection {
     max-width: 250px;
     max-height: 350px;
-    background-color: #fff;
+    background-color: var(--body-bg);
     text-align: center;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -770,16 +786,18 @@ p.description {
     padding-bottom: 0.5rem;
     /* max-width: 250px; */
     border-radius: 10px;
-    background: #fff;
+    background: var(--body-bg);
 }
 
 .details-mycollection-box h4 {
     font-size: 1.2rem;
+    color: #ccc;
 }
 
 .details-mycollection-box p {
     font-size: .85rem;
     margin-bottom: 0;
+    color: rgb(155, 155, 155);
 }
 
 .center {
@@ -962,4 +980,13 @@ footer {
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+
+.form-container .center p {
+    color: rgb(121, 121, 121);
+    font-size: .95rem;
+}
+
+.form-container .center p span {
+    color: #ccc;
 }
